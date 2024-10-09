@@ -1,0 +1,82 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+ int m,eng,phy,ch,cs;
+ float avg,sum;
+  printf("Enter math marks(0 to 100) ");
+  scanf("%d",&m);
+  if(m>100) {
+      printf("Invalid input\n");
+      return 0;
+  }
+  printf("Enter english marks(0 to 100) ");
+  scanf("%d",&eng);
+  if(eng>100) {
+      printf("Invalid input\n");
+      return 0;
+  }
+  printf("Enter physics marks(0 to 100) ");
+  scanf("%d",&phy);
+  if(phy>100) {
+      printf("Invalid input\n");
+      return 0;
+  }
+  printf("Enter chemsitry marks(0 to 100) ");
+  scanf("%d",&ch);
+  if(m>100) {
+      printf("Invalid input\n");
+      return 0;
+  }
+  printf("Enter cs marks(0 to 100) ");
+  scanf("%d",&cs );
+  if(m>100) {
+      printf("Invalid input\n");
+      return 0;
+  }
+  if(m<40)
+    {
+        printf("You failed");
+        return 0;
+    }
+    else if(eng<40) {
+        printf("You failed");
+        return 0;
+    }
+    else if(phy<40) {
+        printf("You failed");
+        return 0;
+    }
+    else if(ch<40) {
+        printf("You failed");
+        return 0;
+    }
+    else if(cs<40) {
+        printf("You failed");
+        return 0;
+    }
+    sum = m + eng + phy + ch + cs;
+   avg = sum / 5;
+ printf("your avg is =%f\n",avg);
+    if(avg>75){
+     printf("Your grade is distinction\n");
+     printf("Congratulatons!!\n");
+     printf("You are eligible for scholarship of worth Rs.8 lakh ");
+    }
+    else if(avg>60 && avg<75) {
+        printf("Your grade is first class\n");
+        printf("Congratulatons!!\n");
+        printf("You are eligible for scholarship of worth Rs.4 lakh");
+    }
+    else if(avg>50 && avg<60) {
+        printf("Your grade is second class\n");
+        printf("Congratulatons!!\n");
+        printf("You are eligible for scholarship of worth Rs.2 lakh");
+    }
+    else if(avg>40 && avg<50) {
+        printf("Your grade is third class\n");
+        printf("Congratulatons!!\n");
+        printf("You are eligible for scholarship of worth Rs.10 thousand");
+    }
+    return 0;
+}
