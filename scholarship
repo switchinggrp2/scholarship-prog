@@ -1,0 +1,62 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+ int m,eng,phy,ch,cs;
+ float avg,sum;
+  printf("Enter math marks ");
+  scanf("%d",&m);
+  printf("Enter english marks ");
+  scanf("%d",&eng);
+  printf("Enter physics marks ");
+  scanf("%d",&phy);
+  printf("Enter chemsitry marks ");
+  scanf("%d",&ch);
+  printf("Enter cs marks ");
+  scanf("%d",&cs );
+  if(m<40)
+    {
+        printf("You failed");
+        return 0;
+    }
+    else if(eng<40) {
+        printf("You failed");
+        return 0;
+    }
+    else if(phy<40) {
+        printf("You failed");
+        return 0;
+    }
+    else if(ch<40) {
+        printf("You failed");
+        return 0;
+    }
+    else if(cs<40) {
+        printf("You failed");
+        return 0;
+    }
+    sum = m + eng + phy + ch + cs;
+   avg = sum / 5;
+ printf("your avg is =%f\n",avg);
+    if(avg>75){
+     printf("Your grade is distinction\n");
+     printf("Congratulatons!!\n");
+     printf("You are eligible for scholarship of worth Rs.8 lakh ");
+    }
+    else if(avg>60 && avg<75) {
+        printf("Your grade is first class\n");
+        printf("Congratulatons!!\n");
+        printf("You are eligible for scholarship of worth Rs.4 lakh");
+    }
+    else if(avg>50 && avg<60) {
+        printf("Your grade is second class\n");
+        printf("Congratulatons!!\n");
+        printf("You are eligible for scholarship of worth Rs.2 lakh");
+    }
+    else if(avg>40 && avg<50) {
+        printf("Your grade is third class\n");
+        printf("Congratulatons!!\n");
+        printf("You are eligible for scholarship of worth Rs.10 thousand");
+    }
+    return 0;
+}
